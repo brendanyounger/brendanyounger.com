@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && docker build -t brendanyounger.com .",
+    "build": "next build && docker build -t brendanyounger_com .",
     "start": "next start"
   },
   "dependencies": {
