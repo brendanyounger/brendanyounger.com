@@ -1,13 +1,12 @@
 import Head from "next/head";
 import Header from "../components/Header";
-
-const person = {};
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <Head>
-        <title>brendanyounger.com</title>
+        <title>Home – brendanyounger.com</title>
         <meta name="description" content="Personal page of Brendan Younger" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -213,11 +212,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="flex justify-center items-center mt-5 mb-3">
-        <span className="prose prose-red text-gray-500">
-          <a href="/">home</a> ∙ <a href="/about">about</a> ∙ © 2021 brendan younger
-        </span>
-      </footer>
+      <Footer />
     </div>
   );
 }

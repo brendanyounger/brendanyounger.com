@@ -31,6 +31,9 @@ module.exports = {
               '&:hover': {
                 color: theme("colors.red.700", defaultTheme.colors.red[700]),
               },
+              '&:visited': {
+                color: theme("colors.red.900", defaultTheme.colors.red[900]),
+              },
             },
           },
         },
