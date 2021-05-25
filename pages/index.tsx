@@ -30,8 +30,9 @@ export default function Home() {
                   >
                     Logistimatics
                   </a>{" "}
-                  after 4 years and over $10M in annual revenue. This is what I'm currently thinking
-                  about. Please{" "}
+                  after 4 years{" "}
+                  <a href="https://www.youtube.com/watch?v=lwnnIN4YTtY">with two great guys</a> and
+                  over $10M in annual revenue. This is what I'm currently thinking about. Please{" "}
                   <a
                     className="text-yellow-400 hover:text-yellow-500"
                     href="mailto:brendan@brendanyounger.com"
@@ -173,8 +174,8 @@ export default function Home() {
                       <p className="text-lg text-gray-300">
                         I grew up in Madison, Wisconsin. A good year was when you could skate on the
                         Warner Park lagoon between Christmas and New Year's. As the '90's wore on,
-                        there were fewer good years. Some people care about flooding,
-                        drought, heat waves, mass migration, etc. I just want more hockey.
+                        there were fewer good years. Some people care about flooding, drought, heat
+                        waves, mass migration, etc. I just want more hockey.
                       </p>
                     </div>
                   </div>
