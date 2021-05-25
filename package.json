@@ -5,7 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && docker build -t brendanyounger_com .",
-    "start": "next start"
+    "start": "next start",
+    "deploy:login": "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 867337084401.dkr.ecr.us-east-1.amazonaws.com",
+    "deploy:build": "next build && docker build -t brendanyounger_com .",
+    "deploy:tag": "docker tag brendanyounger_com:latest 867337084401.dkr.ecr.us-east-1.amazonaws.com/brendanyounger_com:latest",
+    "deploy:push": "docker push 867337084401.dkr.ecr.us-east-1.amazonaws.com/brendanyounger_com:latest",
+    "deploy": "yarn deploy:login && yarn deploy:build && yarn deploy:tag && yarn deploy:push"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.0",

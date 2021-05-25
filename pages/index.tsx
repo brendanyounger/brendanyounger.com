@@ -31,8 +31,13 @@ export default function Home() {
                     Logistimatics
                   </a>{" "}
                   after 4 years{" "}
-                  <a href="https://www.youtube.com/watch?v=lwnnIN4YTtY">with two great guys</a> and
-                  over $10M in annual revenue. This is what I'm currently thinking about. Please{" "}
+                  <a
+                    className="text-yellow-400 hover:text-yellow-500"
+                    href="https://www.youtube.com/watch?v=lwnnIN4YTtY"
+                  >
+                    with two great guys
+                  </a>{" "}
+                  and over $10M in annual revenue. This is what I'm currently thinking about. Please{" "}
                   <a
                     className="text-yellow-400 hover:text-yellow-500"
                     href="mailto:brendan@brendanyounger.com"
