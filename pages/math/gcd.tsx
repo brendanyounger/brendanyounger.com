@@ -7,7 +7,7 @@ import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
 import { Switch } from "@headlessui/react";
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -67,10 +67,12 @@ export default function GcdArticle() {
                 <p className="text-lg text-gray-700">
                   A theorem of Lamé, Dixon, and Heilbronn states that the average number of
                   iterations of the classical GCD function is
-                  <BlockMath math="\frac{12~\mathrm{ln}(2)}{\pi^2} \mathrm{ln}(\mathrm{max}(x, y))" />
-                  and the maximum is given by
-                  <BlockMath math="\lceil \mathrm{ln}(N \sqrt{5}) / \mathrm{ln}((1 + \sqrt{5}) / 2)\rceil - 2" />
                 </p>
+                <BlockMath math="\frac{12~\mathrm{ln}(2)}{\pi^2} \mathrm{ln}(\mathrm{max}(x, y))" />
+                <p className="text-lg text-gray-700">
+                  and the maximum is given by
+                </p>
+                <BlockMath math="\lceil \mathrm{ln}(N \sqrt{5}) / \mathrm{ln}((1 + \sqrt{5}) / 2)\rceil - 2" />
               </div>
               <div className="mt-5 prose prose-red text-gray-700 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1"></div>
               <ul role="list" className="divide-y divide-gray-200">
