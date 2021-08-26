@@ -204,6 +204,14 @@ export default function Home() {
                       <li>
                         <a
                           className="text-yellow-400 hover:underline"
+                          href="/math/gcd"
+                        >
+                          GCD iteration count visualization &rarr;
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="text-yellow-400 hover:underline"
                           href="http://worrydream.com/LadderOfAbstraction/"
                         >
                           Bret Victor's Ladder of Abstraction &rarr;

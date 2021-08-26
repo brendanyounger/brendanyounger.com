@@ -28,10 +28,10 @@ module.exports = {
             a: {
               color: theme("colors.red.500", defaultTheme.colors.red[500]),
               textDecoration: "none",
-              '&:hover': {
+              "&:hover": {
                 color: theme("colors.red.700", defaultTheme.colors.red[700]),
               },
-              '&:visited': {
+              "&:visited": {
                 color: theme("colors.red.900", defaultTheme.colors.red[900]),
               },
             },
@@ -43,5 +43,9 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/forms"),
+  ],
 };
