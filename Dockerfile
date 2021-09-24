@@ -7,6 +7,7 @@ ENV NODE_ENV production
 # COPY /app/next.config.js ./
 COPY public ./public
 COPY .next ./.next
+COPY .env ./.env
 COPY node_modules ./node_modules
 
 RUN addgroup -g 1001 -S nodejs
