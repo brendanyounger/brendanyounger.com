@@ -1,0 +1,5 @@
+<pre><div class="rounded-lg p-6 bg-code overflow-x-auto text-gray-400 text-sm"><pre><code class="language-sh hljs bash"><span class="hljs-comment"># Install with NPM</span>
+npm install --save @geoffcodesthings/tailwind-md-base
+
+<span class="hljs-comment"># Or use Yarn</span>
+yarn add @geoffcodesthings/tailwind-md-base</code></pre></div></pre>
